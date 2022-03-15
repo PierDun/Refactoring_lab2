@@ -29,7 +29,7 @@ public class CommandHandler {
         BufferedReader reader = new BufferedReader(this.reader);
         new HelpCommand(writer).execute();
         while (isRunning) {
-            writer.write("Input the command:\n");
+            writer.write("Введите комманду:\n");
             writer.flush();
             String cmd = reader.readLine().toLowerCase();
             Command command = getCmdFromStr(cmd);
